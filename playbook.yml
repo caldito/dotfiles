@@ -1,0 +1,6 @@
+---
+- name: playbook for configure workstation
+  hosts: localhost
+  roles:
+    - ./roles/packets-role
+...
