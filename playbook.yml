@@ -1,6 +1,7 @@
 ---
-- name: playbook for configure workstation
+- name: Playbook to configure workstation
   hosts: localhost
   roles:
-    - ./roles/packets-role
+    - ./roles/essential-packages-role
+    - ./roles/gnome-customization-role
 ...

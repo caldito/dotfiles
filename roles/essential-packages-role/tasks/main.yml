@@ -1,0 +1,36 @@
+---
+- name: Essential packages
+  become: true
+  apt:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  loop:
+    - git
+    - vim
+    - tmux
+    - neofetch
+    - curl
+    - htop
+    - ranger
+    - build-essential
+    - openjdk-8-jdk
+
+    # must make another role for the following packages
+    - chromium-browser 
+    - tlp 
+    - vlc    
+    - virtualbox  
+    - ubuntu-restricted-extras 
+    - baobab 
+    - terminator
+    # docker
+    # terraform
+    # vagrant
+    # skype
+    # libreoffice
+    # telegram
+    # spotify
+    # powershell
+  when: ansible_os_family == "Debian"
+...

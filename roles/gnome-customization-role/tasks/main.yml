@@ -1,0 +1,13 @@
+---
+- name: Packages needed for customizing
+  become: true
+  apt:
+    name: "{{ item }}"
+    state: present
+  loop: 
+    - chrome-gnome-shell 
+    - papirus-icon-theme 
+    - arc-theme 
+    - gnome-tweak-tool 
+  when: ansible_os_family == "Debian"
+...
