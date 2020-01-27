@@ -4,4 +4,5 @@
   roles:
     - ./roles/essential-packages-role
     - ./roles/gnome-customization-role
+    - ./roles/dotfiles-role
 ...

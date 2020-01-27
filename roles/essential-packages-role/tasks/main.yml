@@ -6,6 +6,7 @@
     state: present
     update_cache: yes
   loop:
+    # CLI programs
     - git
     - vim
     - tmux
@@ -16,15 +17,19 @@
     - build-essential
     - openjdk-8-jdk
 
-    # must make another role for the following packages
-    - chromium-browser 
-    - tlp 
-    - vlc    
-    - virtualbox  
-    - ubuntu-restricted-extras 
-    - baobab 
-    - terminator
-    # docker
+    # GUI programs
+    - chromium-browser
+    - vlc
+    - virtualbox
+    - baobab
+    - transmission
+
+    # other
+    - tlp
+    - ubuntu-restricted-extras
+    
+
+    # codium or code (codium is preferred)
     # terraform
     # vagrant
     # skype
@@ -32,5 +37,7 @@
     # telegram
     # spotify
     # powershell
-  when: ansible_os_family == "Debian"
+    # rtm
+    # gitkraken 
+  when: ansible_distribution == "Ubuntu"
 ...

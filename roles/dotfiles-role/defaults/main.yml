@@ -1,2 +1,8 @@
 ---
-# defaults file for dotfiles-role
+dotfiles_home: "~"
+dotfiles_source: "~/git/dotfiles"
+dotfiles_files:
+  - .tmux.conf
+  - .vimrc
+...
+
