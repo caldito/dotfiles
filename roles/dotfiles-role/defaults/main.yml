@@ -4,5 +4,6 @@ dotfiles_source: "~/git/dotfiles"
 dotfiles_files:
   - .tmux.conf
   - .vimrc
+  - .zshrc
 ...
 
