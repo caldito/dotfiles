@@ -1,11 +1,28 @@
+##########
+# Basics #
+##########
 
+# completion
+autoload -Uz compinit
+compinit
 
+# auto cd
+setopt  autocd autopushd
 
 ##########
 # Prompt #
 ##########
+[[ "$TERM" != "xterm-256color" ]] && export TERM=xterm-256color
+PROMPT='%B%F{208}%n@%M%f %F{226}%~%f%b '
 
-PROMPT='"$(whoami)" in %~ -> '
+#########
+# Alias #
+#########
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 
 ###########
 # Plugins #
