@@ -20,9 +20,11 @@ PROMPT='%B%F{166}%n@%M%f %F{136}%~%f%b '
 #########
 
 alias ls='ls --color=auto'
+alias ll='ls -la'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+alias v='vim'
 
 ###########
 # Plugins #

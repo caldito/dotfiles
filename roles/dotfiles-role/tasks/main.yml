@@ -16,10 +16,16 @@
 
 - name: Link dotfiles into home folder.
   file:
-    src: "{{ dotfiles_source}}/{{ item }}"
+    src: "{{ dotfiles_source }}/{{ item }}"
     dest: "{{ dotfiles_home }}/{{ item }}"
     state: link
   become: false
   with_items: "{{ dotfiles_files }}"
-...
 
+- name: zsh default shell for the users
+  become: yes
+  user:
+    name: "{{ item }}"
+    shell: /usr/bin/zsh
+  with_items: "{{ users }}"
+...

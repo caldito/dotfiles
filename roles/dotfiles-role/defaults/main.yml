@@ -5,5 +5,7 @@ dotfiles_files:
   - .tmux.conf
   - .vimrc
   - .zshrc
+users:
+  - root
+  - pablo
 ...
-
