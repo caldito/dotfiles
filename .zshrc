@@ -9,11 +9,17 @@ compinit
 # auto cd
 setopt  autocd autopushd
 
+# git branch
+autoload -Uz vcs_info
+precmd () { vcs_info }
+zstyle ':vcs_info:git:*' formats '%b '
+setopt PROMPT_SUBST
+
 ##########
 # Prompt #
 ##########
 [[ "$TERM" != "xterm-256color" ]] && export TERM=xterm-256color
-PROMPT='%B%F{166}%n@%M%f %F{136}%~%f%b '
+PROMPT='%B%F{166}%n@%M%f %F{136}%~%f %F{160}${vcs_info_msg_0_}%f%b'
 
 #########
 # Alias #
