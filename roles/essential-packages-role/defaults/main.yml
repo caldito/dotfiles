@@ -19,7 +19,7 @@ essential_packages:
   - baobab
   - transmission
   - libreoffice
-
+  - telegram-desktop
   # other
   - tlp
     

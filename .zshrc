@@ -15,6 +15,9 @@ precmd () { vcs_info }
 zstyle ':vcs_info:git:*' formats '%b '
 setopt PROMPT_SUBST
 
+# path
+PATH=$PATH:~/.local/bin
+
 ##########
 # Prompt #
 ##########
