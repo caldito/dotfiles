@@ -30,12 +30,14 @@ essential_packages_ubuntu:
   - chromium-browser
   - ubuntu-restricted-extras
 
+# TODO here are more packages that i'd like to install
   # codium or code (codium is preferred)
-  # terraform
-  # vagrant
+  # insync
+  # spotify
   # skype
   # telegram
-  # spotify
+  # terraform
+  # vagrant
   # powershell
   # rtm
 
