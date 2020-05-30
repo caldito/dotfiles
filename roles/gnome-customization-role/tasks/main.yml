@@ -10,4 +10,4 @@
     - arc-theme 
     - gnome-tweak-tool 
   when: ansible_os_family == "Debian"
-...
+

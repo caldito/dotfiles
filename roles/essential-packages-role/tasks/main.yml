@@ -1,9 +1,25 @@
 ---
 
-- name: Chack that essential packages are installed
+- name: Check that essential packages are installed
   become: true
   apt:
     name: "{{ essential_packages }}"
     state: present
     update_cache: yes
+  when: ansible_os_family == "Debian"
+
+- name: Check that essential packages are installed
+  become: true
+  apt:
+    name: "{{ essential_packages_ubuntu }}"
+    state: present
+    update_cache: yes
   when: ansible_distribution == "Ubuntu"
+
+- name: Check that essential packages are installed
+  become: true
+  apt:
+    name: "{{ essential_packages_debian }}"
+    state: present
+    update_cache: yes
+  when: ansible_distribution == "Debian"

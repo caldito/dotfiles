@@ -2,36 +2,40 @@
 # defaults file for essential-packages-role
 essential_packages:
   # CLI programs
-    - git
-    - vim
-    - tmux
-    - zsh
-    - neofetch
-    - curl
-    - htop
-    - ranger
-    - build-essential
-    - openjdk-8-jdk
+  - git
+  - vim
+  - tmux
+  - zsh
+  - neofetch
+  - curl
+  - htop
+  - ranger
+  - build-essential
+  - openjdk-8-jdk
 
-    # GUI programs
-    - chromium-browser
-    - vlc
-    - virtualbox
-    - baobab
-    - transmission
-    - libreoffice
+  # GUI programs
+  - vlc
+  - virtualbox
+  - baobab
+  - transmission
+  - libreoffice
 
-    # other
-    - tlp
-    - ubuntu-restricted-extras
+  # other
+  - tlp
     
+essential_packages_debian:
+  - chromium
 
-    # codium or code (codium is preferred)
-    # terraform
-    # vagrant
-    # skype
-    # telegram
-    # spotify
-    # powershell
-    # rtm
-    # gitkraken 
+essential_packages_ubuntu:
+  - chromium-browser
+  - ubuntu-restricted-extras
+
+  # codium or code (codium is preferred)
+  # terraform
+  # vagrant
+  # skype
+  # telegram
+  # spotify
+  # powershell
+  # rtm
+
