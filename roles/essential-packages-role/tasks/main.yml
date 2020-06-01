@@ -23,3 +23,8 @@
     state: present
     update_cache: yes
   when: ansible_distribution == "Debian"
+
+- name: Check that pip packages are installed
+  pip:
+    name: "{{ pip_packages }}"
+    executable: pip3

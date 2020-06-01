@@ -29,6 +29,7 @@ PROMPT='%B%F{166}%n@%M%f %F{136}%~%f %F{160}${vcs_info_msg_0_}%f%b'
 #########
 
 alias ls='ls --color=auto'
+alias l='ls'
 alias ll='ls -la'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'

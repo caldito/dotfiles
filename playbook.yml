@@ -2,7 +2,10 @@
 - name: Playbook to configure workstation
   hosts: localhost
   roles:
-    - ./roles/essential-packages-role
-    - ./roles/gnome-customization-role
-    - ./roles/dotfiles-role
-...
+    - name: essential-packages-role
+      tags: essential-packages-role 
+    - name: gnome-customization-role
+      tags: gnome-customization-role
+    - name: dotfiles-role
+      tags: dotfiles-role
+
