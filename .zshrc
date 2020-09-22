@@ -21,8 +21,9 @@ PATH=$PATH:~/.local/bin
 ##########
 # Prompt #
 ##########
+NEWLINE=$'\n'
 [[ "$TERM" != "xterm-256color" ]] && export TERM=xterm-256color
-PROMPT='%B%F{166}%n@%M%f %F{136}%~%f %F{160}${vcs_info_msg_0_}%f%b'
+PROMPT='%B%F{166}%n@%M%f %F{136}%~%f %F{160}${vcs_info_msg_0_}%f%b${NEWLINE}$ '
 
 #########
 # Alias #
