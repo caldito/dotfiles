@@ -1,4 +1,4 @@
-##########
+#########
 # Basics #
 ##########
 
@@ -52,24 +52,4 @@ if [ ! -f ""${HOME}"/.zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlightin
 fi
 
 source ~/.zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-#############
-# Dircolors #
-#############
-
-if [ ! -d ""${HOME}"/.dircolors" ]; then
-    mkdir ~/.dircolors
-fi
-
-if [ ! -f ""${HOME}"/.dircolors/dircolors.ansi-universal" ]; then
-    wget -q https://raw.githubusercontent.com/pszynk/zsh-dircolors/master/dircolors/dircolors.ansi-universal  -P ~/.dircolors
-fi
-
-# Return if requirements are not found.
-if (( ! $+commands[dircolors] )); then
-  echo need to install dircolors package
-  return 1
-fi
-
-unset LS_COLORS && eval $(dircolors "${HOME}"/.dircolors/dircolors.ansi-universal)
 
