@@ -10,10 +10,17 @@ Currently I have dotfiles for:
 * tmux
 * vim
 * zsh
+* xinit
 
 ## Usage
 
 This dotfiles are meant to be managed using stow. 
 
-```stow -t $HOME --adopt program-name```
+`stow -t $HOME program-name`
 
+## Requirements
+
+Some packages need to be installed in order to get all the features that the dotfiles provide.
+
+For Arch Linux:
+`sudo pacman -S stow alacritty vim tmux zsh i3 redshift scrot imagemagick`
