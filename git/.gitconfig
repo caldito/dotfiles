@@ -1,10 +1,5 @@
-# This is Git's per-user configuration file.
 [user]
 	name = Pablo Gómez-Caldito
 	email = pablo@streamsets.com
 [alias]
     tree = log --graph --oneline --all
-# Please adapt and uncomment the following lines:
-#	name = Pablo Gómez-Caldito
-#	email = pablo@streamsets.com
-
