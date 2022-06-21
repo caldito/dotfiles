@@ -1,4 +1,4 @@
-#########
+##########
 # Basics #
 ##########
 
@@ -36,6 +36,9 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias v='vim'
+alias g='git'
+alias c='code'
+alias ubuntu="docker run -it ubuntu /bin/bash"
 
 ###########
 # Plugins #
@@ -53,3 +56,7 @@ fi
 
 source ~/.zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# to manage config changes across different machines
+if [ -f ""${HOME}"/.vimrc_local" ]; then
+  source ~/.vimrc_local
+fi

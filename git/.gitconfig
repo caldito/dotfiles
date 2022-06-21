@@ -3,3 +3,14 @@
 	email = pablo@streamsets.com
 [alias]
     tree = log --graph --oneline --all
+    tr   = tree
+    t    = tag
+    s    = status
+    co   = checkout
+    de   = branch -D
+    d    = diff
+    c    = commit -m
+    ca   = commit --amend
+    a    = add
+    p    = push
+    cl   = clone
