@@ -14,3 +14,4 @@
     a    = add
     p    = push
     cl   = clone
+    l    = log

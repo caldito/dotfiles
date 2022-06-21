@@ -60,3 +60,6 @@ source ~/.zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 if [ -f ""${HOME}"/.vimrc_local" ]; then
   source ~/.vimrc_local
 fi
+if [ -f ""${HOME}"/.zshrc_local" ]; then
+  source ~/.zshrc_local
+fi
