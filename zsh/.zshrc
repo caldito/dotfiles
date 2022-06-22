@@ -75,4 +75,3 @@ if [[ "$(uname)" == "Darwin" ]]; then
     PATH="/usr/local/opt/gnu-indent/libexec/gnubin:$PATH"
     PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 fi
-
