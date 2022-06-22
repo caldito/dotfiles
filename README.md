@@ -10,7 +10,6 @@ Currently I have dotfiles for:
 * tmux
 * vim
 * zsh
-* xinit
 
 I'm currently using Arch but I also enjoy using Debian based distros so I hope to port the instructions below to them.
 
