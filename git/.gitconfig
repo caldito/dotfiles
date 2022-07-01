@@ -7,6 +7,8 @@
     t    = tag
     s    = status
     co   = checkout
+    cob  = checkout -b
+    br   = branch
     de   = branch -D
     d    = diff
     c    = commit -m
@@ -15,3 +17,8 @@
     p    = push
     cl   = clone
     l    = log
+    sw   = switch
+    pl   = pull
+    rw   = review
+    rt  =  revert
+    cp   = cherry-pick
