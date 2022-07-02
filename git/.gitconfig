@@ -20,5 +20,5 @@
     sw   = switch
     pl   = pull
     rw   = review
-    rt  =  revert
+    rt   =  revert
     cp   = cherry-pick
