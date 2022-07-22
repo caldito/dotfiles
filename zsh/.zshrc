@@ -39,6 +39,8 @@ alias v='vim'
 alias g='git'
 alias c='code'
 alias ubuntu="docker run -it ubuntu /bin/bash"
+alias d='docker'
+alias s='ssh'
 
 ###########
 # Plugins #
