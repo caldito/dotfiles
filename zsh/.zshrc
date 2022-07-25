@@ -41,6 +41,7 @@ alias c='code'
 alias ubuntu="docker run -it ubuntu /bin/bash"
 alias d='docker'
 alias s='ssh'
+alias t='tmux'
 
 ###########
 # Plugins #
