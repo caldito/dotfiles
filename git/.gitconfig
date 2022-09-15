@@ -22,3 +22,5 @@
     rw   = review
     rt   =  revert
     cp   = cherry-pick
+[gitreview]
+	remote = origin
