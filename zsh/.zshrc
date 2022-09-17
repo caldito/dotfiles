@@ -16,7 +16,7 @@ zstyle ':vcs_info:git:*' formats '%b '
 setopt PROMPT_SUBST
 
 # path
-PATH=$PATH:~/.local/bin
+PATH=$PATH:~/.local/bin:/usr/local/go/bin
 
 ##########
 # Prompt #
