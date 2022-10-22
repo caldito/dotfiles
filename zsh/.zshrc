@@ -47,7 +47,7 @@ alias ktx='kubectx'
 alias kns='kubens'
 alias mysql='mysql --protocol=TCP'
 alias m='mysql'
-
+alias i='curl https://ipinfo.io/ip; echo'
 ###########
 # Plugins #
 ###########
