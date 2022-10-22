@@ -45,6 +45,8 @@ alias t='tmux'
 alias k='kubectl'
 alias ktx='kubectx'
 alias kns='kubens'
+alias mysql='mysql --protocol=TCP'
+alias m='mysql'
 
 ###########
 # Plugins #
@@ -72,15 +74,15 @@ fi
 
 # MacOS paths for using GNU programs as default
 # https://apple.stackexchange.com/questions/69223/how-to-replace-mac-os-x-utilities-with-gnu-core-utilities/69332#69332
-#if [[ "$(uname)" == "Darwin" ]]; then
-#    PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-#    PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
-#    PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
-#    PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
-#    export GUILE_TLS_CERTIFICATE_DIRECTORY=/usr/local/etc/gnutls/
-#    PATH="/usr/local/opt/gnu-indent/libexec/gnubin:$PATH"
-#    PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
-#fi
+if [[ "$(uname)" == "Darwin" ]]; then
+    PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+    PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
+    PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
+    PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+    export GUILE_TLS_CERTIFICATE_DIRECTORY=/usr/local/etc/gnutls/
+    PATH="/usr/local/opt/gnu-indent/libexec/gnubin:$PATH"
+    PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
+fi
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
