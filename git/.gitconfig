@@ -1,6 +1,6 @@
 [user]
 	name = Pablo Gómez-Caldito
-	email = pablo@streamsets.com
+	email = pablo@caldito.me
 [alias]
     tree = log --graph --oneline --all
     tr   = tree

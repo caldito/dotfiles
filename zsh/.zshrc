@@ -53,22 +53,22 @@ alias i='curl https://ipinfo.io/ip; echo'
 ###########
 
 # Check if .zsh-plugins folder exists and create it if it does not
-if [ ! -d ""${HOME}"/.zsh-plugins" ]; then
+if [ ! -d "${HOME}/.zsh-plugins" ]; then
     mkdir ~/.zsh-plugins
 fi
 
 
-if [ ! -f ""${HOME}"/.zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]; then
+if [ ! -f "${HOME}/.zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]; then
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh-plugins/zsh-syntax-highlighting
 fi
 
 source ~/.zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # to manage config changes across different machines
-if [ -f ""${HOME}"/.vimrc_local" ]; then
+if [ -f "${HOME}/.vimrc_local" ]; then
   source ~/.vimrc_local
 fi
-if [ -f ""${HOME}"/.zshrc_local" ]; then
+if [ -f "${HOME}/.zshrc_local" ]; then
   source ~/.zshrc_local
 fi
 
@@ -88,3 +88,4 @@ fi
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+if [ -f "${HOME}/.assume-role.sh" ]; then; source ${HOME}/.assume-role.sh; fi
