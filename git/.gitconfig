@@ -1,6 +1,7 @@
 [user]
 	name = Pablo Gómez-Caldito
 	email = pablo@caldito.me
+	signingkey = C8BA519E21A72C71
 [alias]
     tree = log --graph --oneline --all
     tr   = tree
@@ -24,3 +25,5 @@
     cp   = cherry-pick
 [gitreview]
 	remote = origin
+[commit]
+	gpgsign = true
