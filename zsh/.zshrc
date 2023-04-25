@@ -89,3 +89,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 if [ -f "${HOME}/.assume-role.sh" ]; then; source ${HOME}/.assume-role.sh; fi
+
+# GPG
+export GPG_TTY=$(tty)
+
