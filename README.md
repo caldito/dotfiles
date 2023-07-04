@@ -6,7 +6,7 @@ My dotfiles to set up my workstation environment.
 
 Currently I have dotfiles for:
 * alacritty
-* i3
+* i3 (not currently using it)
 * tmux
 * vim
 * zsh
@@ -21,6 +21,11 @@ stow -t $HOME program-name
 
 ## Requirements
 Some packages need to be installed in order to get all the features that the dotfiles provide.
+
+### Ubuntu
+```
+sudo apt install git stow vim tmux zsh
+```
 
 ### Arch Linux
 ```
@@ -44,6 +49,16 @@ brew install coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-geto
 
 ## Other packages
 The packages in this section aren't related to the dotfiles but I post the install instructions here also, for easier setup in future reinstallations of the OS.
+
+### Ubuntu
+CTFs related:
+```
+sudo apt install bettercap hashcat nmap wireshark
+```
+Development related:
+```
+sudo apt upgrade gcc golang python3-pip openjdk-17-jdk maven nodejs npm podman kubectl
+```
 
 ### Arch Linux
 Development related:
