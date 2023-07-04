@@ -40,6 +40,7 @@ alias g='git'
 alias c='code'
 alias ubuntu="docker run -it ubuntu /bin/bash"
 alias d='docker'
+alias docker='sudo docker'
 alias s='ssh'
 alias t='tmux'
 alias k='kubectl'
