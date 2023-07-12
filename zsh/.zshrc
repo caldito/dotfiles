@@ -15,8 +15,9 @@ precmd () { vcs_info }
 zstyle ':vcs_info:git:*' formats '%b '
 setopt PROMPT_SUBST
 
-# path
-PATH=$PATH:~/.local/bin:/usr/local/go/bin:$(go env GOPATH)/bin
+# pathi
+GOPATH=${HOME}/go
+PATH=$PATH:~/.local/bin:/usr/local/go/bin:${GOPATH}/bin
 
 ##########
 # Prompt #

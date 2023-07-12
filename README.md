@@ -11,10 +11,10 @@ Currently I have dotfiles for:
 * vim
 * zsh
 
-I'm currently using Arch but I also enjoy using Debian based distros so I hope to port the instructions below to them.
+I'm currently using Ubuntu and MacOS but there are also instructions for Arch since I've used it for some time. Not all the OS setup is automated because I don't changes distros often, my heavy distrohopping phase has ended for now :)
 
 ## Usage
-This dotfiles are meant to be managed using stow.
+These dotfiles are meant to be managed using stow.
 ```
 stow -t $HOME program-name
 ```
@@ -53,7 +53,8 @@ The packages in this section aren't related to the dotfiles but I post the insta
 ### Ubuntu
 CTFs related:
 ```
-sudo apt install bettercap hashcat nmap wireshark ffuf
+sudo apt install bettercap hashcat nmap wireshark
+go install github.com/ffuf/ffuf/v2@latest
 ```
 Development related:
 ```
