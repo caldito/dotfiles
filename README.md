@@ -53,7 +53,7 @@ The packages in this section aren't related to the dotfiles but I post the insta
 ### Ubuntu
 CTFs related:
 ```
-sudo apt install bettercap hashcat nmap wireshark
+sudo apt install bettercap hashcat nmap wireshark ffuf
 ```
 Development related:
 ```
