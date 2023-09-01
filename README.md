@@ -53,8 +53,9 @@ The packages in this section aren't related to the dotfiles but I post the insta
 ### Ubuntu
 CTFs related:
 ```
-sudo apt install bettercap hashcat nmap wireshark
+sudo apt install bettercap hashcat nmap wireshark ruby ruby-dev
 go install github.com/ffuf/ffuf/v2@latest
+sudo gem install wpscan
 ```
 Development related:
 ```
