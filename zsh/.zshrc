@@ -50,6 +50,7 @@ alias kns='kubens'
 alias mysql='mysql --protocol=TCP'
 alias m='mysql'
 alias i='curl https://ipinfo.io/ip; echo'
+alias hm='home-manager'
 ###########
 # Plugins #
 ###########
