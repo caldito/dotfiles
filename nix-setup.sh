@@ -12,4 +12,4 @@ nix-shell '<home-manager>' -A install
 home-manager switch
 # Change shell to zsh
 command -v zsh | sudo tee -a /etc/shells
-sudo chsh -s "$(command -v zsh)" "${USER}"
+chsh -s "$(command -v zsh)" "${USER}"
