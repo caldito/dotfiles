@@ -11,4 +11,4 @@ nix-channel --update
 nix-shell '<home-manager>' -A install
 # Change shell to zsh
 command -v zsh | sudo tee -a /etc/shells
-chsh -s "$(command -v zsh)" "${USER}"
+sudo chsh -s "$(command -v zsh)" "${USER}"

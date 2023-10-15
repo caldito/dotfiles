@@ -14,11 +14,17 @@ Currently I have dotfiles for:
 I'm currently using Ubuntu and MacOS but there are also instructions for Arch since I've used it for some time. Not all the OS setup is automated because I don't changes distros often, my heavy distrohopping phase has ended for now :)
 
 ## Usage
-These dotfiles are meant to be managed using stow.
+
+### Stow method and install stuff manuall
+You can link the dotfiles using stow.
 ```
 stow -t $HOME program-name
 ```
-
+### Nix homemanager method
+You can install all the requirements and link the dotfiles using home-manager. Works across distributions.
+```
+curl https://raw.githubusercontent.com/caldito/dotfiles/master/nix-setup.sh | bash
+```
 ## Requirements
 Some packages need to be installed in order to get all the features that the dotfiles provide.
 
