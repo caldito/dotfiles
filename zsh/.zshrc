@@ -15,7 +15,7 @@ precmd () { vcs_info }
 zstyle ':vcs_info:git:*' formats '%b '
 setopt PROMPT_SUBST
 
-# pathi
+# path
 GOPATH=${HOME}/go
 PATH=$PATH:~/.local/bin:/usr/local/go/bin:${GOPATH}/bin
 
@@ -69,10 +69,10 @@ source ~/.zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # to manage config changes across different machines
 if [ -f "${HOME}/.vimrc_local" ]; then
-  source ~/.vimrc_local
+    source ~/.vimrc_local
 fi
 if [ -f "${HOME}/.zshrc_local" ]; then
-  source ~/.zshrc_local
+    source ~/.zshrc_local
 fi
 
 # MacOS paths for using GNU programs as default
@@ -88,10 +88,12 @@ if [[ "$(uname)" == "Darwin" ]]; then
 fi
 
 # pyenv
+if [ ! -d "${HOME}/.pyenv" ]; then
+    git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+fi
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
-if [ -f "${HOME}/.assume-role.sh" ]; then; source ${HOME}/.assume-role.sh; fi
 
 # GPG
 export GPG_TTY=$(tty)
