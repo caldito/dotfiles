@@ -38,7 +38,7 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias v='vim'
 alias g='git'
-alias c='code'
+alias c='codium'
 alias ubuntu="docker run -it ubuntu /bin/bash"
 alias d='docker'
 alias docker='sudo docker'
