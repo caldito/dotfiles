@@ -57,6 +57,9 @@
     ".zshrc".source = zsh/.zshrc;
     ".vimrc".source = vim/.vimrc;
     ".tmux.conf".source = tmux/.tmux.conf;
+    # i3 stuff
+    ".config/i3/config".source = i3/.config/i3/config;
+    ".config/i3status/config".source = i3/.config/i3status/config;
   };
 
 
