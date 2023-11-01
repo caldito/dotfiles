@@ -2,6 +2,10 @@
 # Basics #
 ##########
 
+# default programs
+export EDITOR=vim
+export BROWSE=librewolf
+
 # completion
 autoload -Uz compinit
 compinit
