@@ -23,14 +23,37 @@ stow -t $HOME program-name
 ## Requirements
 Some packages need to be installed in order to get all the features that the dotfiles provide.
 
-### Ubuntu
+### Debian/Ubuntu
+Basic stuff
 ```
-sudo apt install git stow vim tmux zsh
+sudo apt install git ssh gpg stow vim tmux zsh 
+```
+
+i3 and dependencies:
+```
+sudo apt install i3 blueman pulseaudio brightnessctl redshift nitrogen scrot imagemagick
+```
+
+Development and SRE related:
+```
+sudo apt upgrade gcc golang python3-pip openjdk-17-jdk maven nodejs npm podman kubectl
+```
+
+Security related:
+```
+sudo apt install bettercap hashcat nmap wireshark ruby ruby-dev aircrack-ng gpa
+go install github.com/ffuf/ffuf/v2@latest
+sudo gem install wpscan
 ```
 
 ### Arch Linux
 ```
 sudo pacman -S git stow alacritty vim tmux zsh i3 redshift nitrogen scrot imagemagick
+```
+
+Development related:
+```
+sudo pacman -S gcc go python pyenv python-pip jdk11-openjdk jdk17-openjdk maven nodejs npm podman kubectl kubectx
 ```
 
 ### MacOS
@@ -48,28 +71,6 @@ Install GNU versions of commont CLI utils, from [this StackOverflow post](https:
 brew install coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-getopt grep
 ```
 
-## Other packages
-The packages in this section aren't related to the dotfiles but I post the install instructions here also, for easier setup in future reinstallations of the OS.
-
-### Ubuntu
-CTFs related:
-```
-sudo apt install bettercap hashcat nmap wireshark ruby ruby-dev
-go install github.com/ffuf/ffuf/v2@latest
-sudo gem install wpscan
-```
-Development related:
-```
-sudo apt upgrade gcc golang python3-pip openjdk-17-jdk maven nodejs npm podman kubectl
-```
-
-### Arch Linux
-Development related:
-```
-sudo pacman -S gcc go python pyenv python-pip jdk11-openjdk jdk17-openjdk maven nodejs npm podman kubectl kubectx
-```
-
-### MacOS
 Development related:
 ```
 brew install gcc go python pyenv openjdk@11 openjdk@17 maven nodejs nvm podman kubectl kubectx
