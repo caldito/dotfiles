@@ -37,7 +37,7 @@ exec --no-startup-id nitrogen --restore
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
-exec --no-startup-id blueman-tray
+exec --no-startup-id blueman-applet
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -51,6 +51,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
 # Screenshots
 bindsym Print exec --no-startup-id scrot $HOME/Pictures/screenshot-`date +%Y-%m-%d_%H:%M:%S`.png
+bindsym --release Shift+Print exec --no-startup-id scrot -s $HOME/Pictures/screenshot-`date +%Y-%m-%d_%H:%M:%S`.png
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
