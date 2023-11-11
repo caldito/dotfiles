@@ -49,7 +49,17 @@ sudo gem install wpscan
 ### Other random stuff
 #### Natural touchpad scroll
 In `/usr/share/X11/xorg.conf.d/40-libinput.conf` add `Option "NaturalScrolling" "True"` in the touchpad section.
-
+#### Buster sources.list
+```
+deb http://deb.debian.org/debian/ bookworm main contrib non-free-firmware # non-free
+deb http://security.debian.org/debian-security bookworm-security main contrib non-free-firmware # non-free
+deb http://deb.debian.org/debian/ bookworm-updates main contrib non-free-firmware # non-free
+```
+#### Things outside repos
+- Librewolf
+- Bitwarden
+- Spotify
+- Codium
 ### Arch Linux
 ```
 sudo pacman -S git stow alacritty vim tmux zsh i3 redshift nitrogen scrot imagemagick
