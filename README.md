@@ -46,6 +46,10 @@ go install github.com/ffuf/ffuf/v2@latest
 sudo gem install wpscan
 ```
 
+### Other random stuff
+#### Natural touchpad scroll
+In `/usr/share/X11/xorg.conf.d/40-libinput.conf` add `Option "NaturalScrolling" "True"` in the touchpad section.
+
 ### Arch Linux
 ```
 sudo pacman -S git stow alacritty vim tmux zsh i3 redshift nitrogen scrot imagemagick
