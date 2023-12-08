@@ -26,7 +26,7 @@ Some packages need to be installed in order to get all the features that the dot
 ### Debian/Ubuntu
 Basic stuff
 ```
-sudo apt install git ssh gpg stow vim tmux zsh 
+sudo apt install git opessh-client gpg stow vim tmux zsh
 ```
 
 i3 and dependencies:
