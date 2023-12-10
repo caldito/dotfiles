@@ -31,7 +31,7 @@ sudo apt install git openssh-client gpg stow vim tmux zsh
 
 i3 and dependencies:
 ```
-sudo apt install i3 blueman pulseaudio brightnessctl redshift nitrogen scrot imagemagick fonts-hack
+sudo apt install i3 blueman pulseaudio brightnessctl arandr redshift nitrogen scrot imagemagick fonts-hack fonts-font-awesome
 ```
 
 Development and SRE related:
