@@ -11,8 +11,8 @@
 
 # gaps
 default_border pixel
-gaps inner 5
-gaps outer 0 
+#gaps inner 5
+#gaps outer 0
 
 set $mod Mod4
 
@@ -49,6 +49,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 # Adjust brightness with brightnessctl
 set $compute_brightness echo "$(brightnessctl g) / $(brightnessctl m) * 100" | bc -l | sed 's/\(.*\)\..*/\1/g' > /tmp/brightness.txt
+exec --no-startup-id $compute_brightness && $refresh_i3status
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5% && $compute_brightness && $refresh_i3status
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%- && $compute_brightness && $refresh_i3status
 
