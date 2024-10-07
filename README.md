@@ -31,7 +31,7 @@ sudo apt install git openssh-client gpg stow vim tmux zsh
 
 i3 and dependencies:
 ```
-sudo apt install i3 blueman pulseaudio brightnessctl arandr redshift nitrogen scrot imagemagick fonts-hack fonts-font-awesome
+sudo apt install i3 blueman pulseaudio brightnessctl arandr redshift nitrogen scrot imagemagick fonts-hack fonts-font-awesome wget
 ```
 
 Development and SRE related:
@@ -62,7 +62,7 @@ deb http://deb.debian.org/debian/ bookworm-updates main contrib non-free-firmwar
 - Codium
 ### Arch Linux
 ```
-sudo pacman -S git stow alacritty vim tmux zsh i3 redshift nitrogen scrot imagemagick
+sudo pacman -S git stow alacritty vim tmux zsh i3 redshift nitrogen scrot imagemagick wget
 ```
 
 Development related:
@@ -75,9 +75,9 @@ Install brew
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-Install basic packages
+Install basic packages and dependencies
 ```
-brew install alacritty tmux vim
+brew install stow alacritty tmux vim wget
 ```
 
 Install GNU versions of commont CLI utils, from [this StackOverflow post](https://apple.stackexchange.com/questions/69223/how-to-replace-mac-os-x-utilities-with-gnu-core-utilities/69332#69332).
@@ -85,7 +85,12 @@ Install GNU versions of commont CLI utils, from [this StackOverflow post](https:
 brew install coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-getopt grep
 ```
 
-Development related:
+Development, SRE, criptography and others:
 ```
-brew install gcc go python pyenv openjdk@11 openjdk@17 maven nodejs nvm podman kubectl kubectx
+brew install gcc go python pyenv openjdk@11 openjdk@17 maven nodejs nvm podman kubectl kubectx gnupg gpa neofetch
+```
+
+GUI apps:
+```
+brew install --cask spotify vscodium bitwarden librewolf firefox zoom
 ```
