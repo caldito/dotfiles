@@ -87,10 +87,10 @@ brew install coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-geto
 
 Development, SRE, criptography and others:
 ```
-brew install gcc go python pyenv openjdk@11 openjdk@17 maven nodejs nvm podman kubectl kubectx gnupg gpa neofetch
+brew install gcc go python pyenv openjdk@17 maven nodejs nvm podman kubectl kubectx gnupg gpa neofetch
 ```
 
-GUI apps:
+Utilities:
 ```
-brew install --cask spotify vscodium bitwarden librewolf firefox zoom
+brew install spotify vscodium bitwarden librewolf firefox zoom obsidian syncthing discord
 ```
