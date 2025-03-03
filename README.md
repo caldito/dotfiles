@@ -6,12 +6,12 @@ My dotfiles to set up my workstation environment.
 
 Currently I have dotfiles for:
 * alacritty
-* i3 (not currently using it)
+* i3 
 * tmux
 * vim
 * zsh
 
-I'm currently using Ubuntu and MacOS but there are also instructions for Arch since I've used it for some time. Not all the OS setup is automated because I don't changes distros often, my heavy distrohopping phase has ended for now :)
+I'm currently using Ubuntu/Debian and MacOS but there are also instructions for Arch since I've used it for some time. Not all the OS setup is automated because I don't changes distros often, my heavy distrohopping phase has ended for now :)
 
 ## Usage
 
@@ -68,6 +68,10 @@ sudo pacman -S git stow alacritty vim tmux zsh i3 redshift nitrogen scrot imagem
 Development related:
 ```
 sudo pacman -S gcc go python pyenv python-pip jdk11-openjdk jdk17-openjdk maven nodejs npm podman kubectl kubectx
+```
+Other:
+```
+sudo pacman -S librewolf bitwarden obsidian
 ```
 
 ### MacOS
