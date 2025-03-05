@@ -31,7 +31,7 @@ sudo apt install git openssh-client gpg stow vim tmux zsh
 
 i3 and dependencies:
 ```
-sudo apt install i3 blueman pulseaudio brightnessctl arandr redshift nitrogen scrot imagemagick fonts-hack fonts-font-awesome wget
+sudo apt install i3 blueman pulseaudio brightnessctl arandr redshift nitrogen scrot imagemagick fonts-hack fonts-font-awesome wget picom
 ```
 
 Development and SRE related:
@@ -62,7 +62,7 @@ deb http://deb.debian.org/debian/ bookworm-updates main contrib non-free-firmwar
 - Codium
 ### Arch Linux
 ```
-sudo pacman -S git stow alacritty vim tmux zsh i3 redshift nitrogen scrot imagemagick wget
+sudo pacman -S git stow alacritty vim tmux zsh i3 redshift nitrogen scrot imagemagick wget picom
 ```
 
 Development related:

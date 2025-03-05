@@ -10,8 +10,8 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 # gaps
-default_border pixel
-gaps inner 7
+default_border none
+gaps inner 10
 gaps outer 0
 
 set $mod Mod4
@@ -32,8 +32,10 @@ font pango: Hack 10
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # Configure night light
 exec --no-startup-id redshift -l 40.4169:-3.7038 -t 6000:3000
-# Restore last background
+# Restore last wallpaper
 exec --no-startup-id nitrogen --restore
+# Run picom to manage window styling
+exec --no-startup-id picom -b
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
