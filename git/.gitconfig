@@ -28,3 +28,5 @@
 	remote = origin
 [commit]
 	gpgsign = true
+[push]
+    autoSetupRemote = true
