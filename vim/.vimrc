@@ -4,6 +4,13 @@ set expandtab
 set number
 set relativenumber
 
+" status bar
+set statusline=%f         " Path to the file
+set statusline+=%=        " Switch to the right side
+set statusline+=%l        " Current line
+set statusline+=/         " Separator
+set statusline+=%L        " Total lines
+set laststatus=2          " Always display
 
 " solarized color palette
 :call system('[ ! -d ""${HOME}"/.vim" ] && mkdir ~/.vim')
