@@ -26,12 +26,12 @@ Some packages need to be installed in order to get all the features that the dot
 ### Debian/Ubuntu
 Basic stuff
 ```
-sudo apt install git openssh-client gpg stow vim tmux zsh
+sudo apt install git openssh-client gpg stow vim tmux zsh alacritty
 ```
 
 i3 and dependencies:
 ```
-sudo apt install i3 blueman pulseaudio brightnessctl arandr redshift nitrogen scrot imagemagick fonts-hack fonts-font-awesome wget picom
+sudo apt install i3 blueman pulseaudio brightnessctl arandr redshift nitrogen scrot imagemagick fonts-hack fonts-font-awesome wget picom polybar xinit network-manager-gnome thunar ranger seahorse
 ```
 
 Development and SRE related:
@@ -46,6 +46,16 @@ go install github.com/ffuf/ffuf/v2@latest
 sudo gem install wpscan
 ```
 
+Other:
+```
+sudo apt install synchting neofetch
+# Extrepo for adding other repos
+sudo apt update && sudo apt install extrepo -y
+sudo extrepo enable librewolf vscodium
+sudo apt update && sudo apt install librewolf codium
+```
+```
+
 ### Other random stuff
 #### Natural touchpad scroll
 In `/usr/share/X11/xorg.conf.d/40-libinput.conf` add `Option "NaturalScrolling" "True"` in the touchpad section.
@@ -55,11 +65,12 @@ deb http://deb.debian.org/debian/ bookworm main contrib non-free-firmware # non-
 deb http://security.debian.org/debian-security bookworm-security main contrib non-free-firmware # non-free
 deb http://deb.debian.org/debian/ bookworm-updates main contrib non-free-firmware # non-free
 ```
-#### Things outside repos
-- Librewolf
+#### Things outside repos and extrepos
 - Bitwarden
 - Spotify
-- Codium
+- Obsidian
+
+
 ### Arch Linux
 ```
 sudo pacman -S git stow alacritty vim tmux zsh i3 redshift nitrogen scrot imagemagick wget picom
