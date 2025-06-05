@@ -102,3 +102,7 @@ eval "$(pyenv init -)"
 # GPG
 export GPG_TTY=$(tty)
 
+# SSH agent in linux (using seahorse a.k.a. gnome keyring)
+if [[ "$(uname)" == "Linux" ]]; then
+    export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/gcr/ssh
+fi
