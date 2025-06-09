@@ -20,7 +20,7 @@ if [[ "$ID" == "debian" ]]; then
     sudo apt install i3 blueman pulseaudio brightnessctl arandr redshift nitrogen scrot imagemagick fonts-hack fonts-font-awesome wget picom polybar xinit network-manager-gnome thunar ranger seahorse
 
     # Development and SRE related
-    sudo apt upgrade gcc golang python3-pip openjdk-17-jdk maven nodejs npm podman kubectl
+    sudo apt upgrade gcc golang python3-pip openjdk-17-jdk maven nodejs npm podman kubectl curl
 
     # Security related
     sudo apt install bettercap hashcat nmap wireshark ruby ruby-dev aircrack-ng gpa
@@ -29,6 +29,7 @@ if [[ "$ID" == "debian" ]]; then
 
     # Other
     sudo apt install synchting neofetch
+
     # Extrepo for adding other repos
     sudo apt update && sudo apt install extrepo -y
     sudo extrepo enable librewolf vscodium
@@ -62,7 +63,7 @@ elif [[ "$ID" == "arch" ]]; then
     sudo pacman -S git stow alacritty vim tmux zsh i3 redshift nitrogen scrot imagemagick wget picom
 
     # Development and SRE related
-    sudo pacman -S gcc go python pyenv python-pip jdk11-openjdk jdk17-openjdk maven nodejs npm podman kubectl kubectx
+    sudo pacman -S gcc go python pyenv python-pip jdk11-openjdk jdk17-openjdk maven nodejs npm podman kubectl kubectx curl
 
     # Other
     sudo pacman -S librewolf bitwarden obsidian
