@@ -20,7 +20,7 @@ if [[ "$ID" == "debian" ]]; then
     sudo apt install i3 blueman pulseaudio brightnessctl arandr redshift nitrogen scrot imagemagick fonts-hack fonts-font-awesome wget picom polybar xinit network-manager-gnome thunar ranger seahorse
 
     # Development and SRE related
-    sudo apt upgrade gcc golang python3-pip openjdk-17-jdk maven nodejs npm podman kubectl curl
+    sudo apt upgrade gcc golang python3-pip openjdk-17-jdk maven nodejs npm podman kubectl curl dnsutils
 
     # Security related
     sudo apt install bettercap hashcat nmap wireshark ruby ruby-dev aircrack-ng gpa
@@ -41,8 +41,8 @@ if [[ "$ID" == "debian" ]]; then
 
     #### Debian bookworm sources.list
     sudo sh -c 'echo "deb http://deb.debian.org/debian/ bookworm main contrib non-free-firmware non-free" > /etc/apt/sources.list'
-    sudo sh -c 'echo "deb http://security.debian.org/debian-security bookworm-security main contrib non-free-firmware non-free" > /etc/apt/sources.list'
-    sudo sh -c 'echo "deb http://deb.debian.org/debian/ bookworm-updates main contrib non-free-firmware non-free" > /etc/apt/sources.list'
+    sudo sh -c 'echo "deb http://security.debian.org/debian-security bookworm-security main contrib non-free-firmware non-free" >> /etc/apt/sources.list'
+    sudo sh -c 'echo "deb http://deb.debian.org/debian/ bookworm-updates main contrib non-free-firmware non-free" >> /etc/apt/sources.list'
     #### Things outside repos and extrepos
     # - Bitwarden
     # - Spotify
