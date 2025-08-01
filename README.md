@@ -1,6 +1,6 @@
 # dotfiles
 
-## Description
+![screenshot](screenshot.png)
 
 My dotfiles to set up my workstation environment.
 
