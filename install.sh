@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+set -o pipefail
 
 #My dotfiles to set up my workstation environment.
 
@@ -20,7 +22,7 @@ if [[ "$ID" == "debian" ]]; then
     sudo apt install i3 blueman pulseaudio brightnessctl arandr redshift nitrogen scrot imagemagick fonts-hack fonts-font-awesome wget picom polybar xinit network-manager-gnome thunar ranger seahorse
 
     # Development and SRE related
-    sudo apt upgrade gcc golang python3-pip openjdk-17-jdk maven nodejs npm podman kubectl curl dnsutils
+    sudo apt upgrade gcc golang python3-pip openjdk-17-jdk maven nodejs npm podman curl dnsutils
 
     # Security related
     sudo apt install bettercap hashcat nmap wireshark ruby ruby-dev aircrack-ng gpa
@@ -28,7 +30,7 @@ if [[ "$ID" == "debian" ]]; then
     sudo gem install wpscan
 
     # Other
-    sudo apt install synchting neofetch
+    sudo apt install syncthing neofetch
 
     # Extrepo for adding other repos
     sudo apt update && sudo apt install extrepo -y
